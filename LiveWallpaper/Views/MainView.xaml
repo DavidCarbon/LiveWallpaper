@@ -17,18 +17,18 @@
     cal:Message.Attach="[Event SourceInitialized]=[Action SourceInitialized()]"
     lan:Xaml.Key="common_appName"
     WindowStartupLocation="CenterScreen"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Background="#FF1D1D1D" Foreground="White">
     <Window.Resources>
         <conveters:UriToCachedImageConverter
             x:Key="UriToCachedImageConverter"
             DecodePixelHeight="110"
             DecodePixelWidth="180" />
     </Window.Resources>
-    <dragablz:TabablzControl Style="{StaticResource MaterialDesignAlternateTabablzControlStyle}">
+    <dragablz:TabablzControl Style="{StaticResource MaterialDesignAlternateTabablzControlStyle}" BorderBrush="#FF292929">
         <!--<dragablz:TabablzControl.InterTabController>
             <dragablz:InterTabController />
         </dragablz:TabablzControl.InterTabController>-->
-        <TabItem lan:Xaml.Key="mainUI_localWallpaper">
+        <TabItem lan:Xaml.Key="mainUI_localWallpaper" Foreground="White">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
@@ -37,7 +37,7 @@
                 <ListView
                     x:Name="Wallpapers"
                     Margin="5"
-                    ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                    ScrollViewer.HorizontalScrollBarVisibility="Disabled" Foreground="#89000000">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <Grid
@@ -111,11 +111,11 @@
                         x:Name="Setting"
                         Margin="5,2,0,5"
                         HorizontalAlignment="Left"
-                        Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}">
+                        Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}" Background="#FF638BAC" BorderBrush="#FF638BAC" Foreground="Black">
                         <iconPacks:PackIconMaterial
                             HorizontalAlignment="Stretch"
                             VerticalAlignment="Stretch"
-                            Kind="AccountSettingsOutline" />                      
+                            Kind="AccountSettingsOutline" Foreground="#DD000000" />
                     </Button>
                     <!--<ComboBox />-->
                     <StackPanel
@@ -123,7 +123,7 @@
                         Margin="5,2,5,5"
                         HorizontalAlignment="Right"
                         Orientation="Horizontal">
-                        <Button x:Name="RefreshLocalWallpaper" Style="{StaticResource MaterialDesignFloatingActionMiniButton}">
+                        <Button x:Name="RefreshLocalWallpaper" Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Background="#FF638BAC" BorderBrush="#FF638BAC" Foreground="Black">
                             <Button.ToolTip>
                                 <Run lan:Xaml.Key="mainUI_refreshWallpaper" />
                             </Button.ToolTip>
@@ -135,7 +135,7 @@
                         <Button
                             x:Name="CreateWallpaper"
                             Margin="10,0,0,0"
-                            Style="{StaticResource MaterialDesignFloatingActionMiniButton}">
+                            Style="{StaticResource MaterialDesignFloatingActionMiniButton}" BorderBrush="#FF638BAC" Background="#FF638BAC" Foreground="Black">
                             <Button.ToolTip>
                                 <Run lan:Xaml.Key="mainUI_createWallpaper" />
                             </Button.ToolTip>
@@ -150,16 +150,16 @@
                 </Grid>
             </Grid>
         </TabItem>
-        <TabItem lan:Xaml.Key="mainUI_wallpaperStore">
+        <TabItem lan:Xaml.Key="mainUI_wallpaperStore" Foreground="White">
             <Grid>
                 <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
                     <TextBlock
                         HorizontalAlignment="Stretch"
                         lan:Xaml.Key="mainUI_thirdParty_desc"
                         TextAlignment="Center"
-                        TextWrapping="Wrap" />
-                    <TextBlock Margin="0,50,0,0" TextAlignment="Center">
-                        <Hyperlink Click="Hyperlink_Click" NavigateUri="https://github.com/giant-app/LiveWallpaper">https://github.com/giant-app/LiveWallpaper</Hyperlink>
+                        TextWrapping="Wrap" Foreground="White" />
+                    <TextBlock Margin="0,50,0,0" TextAlignment="Center" Foreground="White">
+                        <Hyperlink Click="Hyperlink_Click" NavigateUri="https://www.desktophut.com/">DesktopHut</Hyperlink>
                     </TextBlock>
                     <!--<Button
                         x:Name="DownloadStore"

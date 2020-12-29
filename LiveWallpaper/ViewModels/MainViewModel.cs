@@ -57,10 +57,10 @@ namespace LiveWallpaper.ViewModels
                 await Task.Run(() =>
                  {
                      AppManager.MainHandle = handle;
-                     AppManager.CheckUpates(handle);
+                     //AppManager.CheckUpates(handle);
                  });
 
-                CheckVIP();
+                //CheckVIP();
 
                 if (AppManager.Setting.General.MinimizeUI)
                 {

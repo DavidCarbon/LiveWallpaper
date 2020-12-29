@@ -26,11 +26,11 @@
 
   "mainUI_programRunning": "Livewallpaper is already running",
   "mainUI_localWallpaper": "Local wallpaper",
-  "mainUI_wallpaperStore": "Wallpaper store",
+  "mainUI_wallpaperStore": "Info",
   "mainUI_refreshWallpaper": "Refresh wallpaper",
   "mainUI_createWallpaper": "Create wallpaper",
   "mainUI_warning_loadError": "Failed to read wallpaper",
-  "mainUI_thirdParty_desc": "This project is completely open source and technically exchanged without any risk. \r There is currently no wallpaper store available, please download the video and import it yourself",
+  "mainUI_thirdParty_desc": "Please Manually Download Wallpapers from DesktopHut \r Or create your own from the 'Local Wallpaper' Tab",
   "mainUI_openLocalServer": "Open local service",
   "mainUI_downloadStore": "Download store",
 
